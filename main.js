@@ -19,16 +19,12 @@ function showLightbox() {
     lightbox.style.visibility = "visible";
     lightbox.style.opacity = "1";
   
-    console.log(lightbox);
-  
     document.body.appendChild(lightbox);
   }
   
 function removeLightbox() {
     let lightbox = document.getElementById("lightbox");
-    console.log("before removal: " + lightbox);
     lightbox.innerHtml = "";
-    console.log("after child deletion: " + lightbox);
     lightbox.remove();
   }
   
