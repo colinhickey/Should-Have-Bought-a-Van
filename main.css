@@ -65,11 +65,18 @@ main {
   margin-top: 20px;
 }
 
-.image {
+.thumbnail {
   position: relative;
   margin: 20px;
   width: 250px;
   height: 250px;
+  box-shadow: 5px 5px 9px 1px rgba(219,219,219,1);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
@@ -110,7 +117,7 @@ main {
 }
 
 #lightbox img {
-  width: 50%;
+  width: 60%;
 }
 
 .close {
