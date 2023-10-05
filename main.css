@@ -8,10 +8,13 @@ body {
 
 a:link,
 a:visited,
-a:hover,
 a:active {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 header {
@@ -34,7 +37,7 @@ nav {
 }
 
 #hamburger-menu {
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   visibility: hidden;
   display: none;
@@ -72,7 +75,7 @@ nav {
   right: -250px;
   width: 220px;
   height: 100%;
-  background-color: #000;
+  background-color: lightgrey;
   padding: 10px 10px;
   box-sizing: border-box;
   z-index: 200;
@@ -94,9 +97,9 @@ ul {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .3s, visibility .3s, height .3s;
   overflow: hidden;
-  background: black;
+  background: rgb(255, 255, 255);
   z-index: 100;
 }
 
@@ -118,10 +121,15 @@ ul {
   border-bottom: solid black 1px;
 }
 
-.nav-button:hover {
+.nav-button:hover{
   background-color: lightgrey;
   cursor: pointer;
   border: 0px;
+  text-decoration: none;
+}
+
+.nav-button a:hover{
+  text-decoration: none;
 }
 
 @media screen and (max-width: 750px) {
@@ -143,6 +151,7 @@ main {
 .intro {
   font-size: 22px;
   text-align: center;
+  margin: 35px;
 }
 
 .gallery {
@@ -205,7 +214,7 @@ main {
 }
 
 #lightbox img {
-  width: 60%;
+  width: 90%;
 }
 
 .close {
@@ -218,4 +227,18 @@ main {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+}
+
+.van {
+  width: 60%;
+}
+
+.footnote {
+  font-size: 12px;
+}
+
+.longform{
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0% 25%;
 }
