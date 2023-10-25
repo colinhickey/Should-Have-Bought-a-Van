@@ -183,6 +183,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background: rgba(0, 0, 0, 0.5);
   width: 240px;
   height: 240px;
